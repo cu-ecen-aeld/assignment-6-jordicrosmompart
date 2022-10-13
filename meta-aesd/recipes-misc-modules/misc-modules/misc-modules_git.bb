@@ -34,8 +34,10 @@ do_compile () {
 	oe_runmake
 }
 
+SCRIPT_INIT="file://misc-modules-start-stop.sh"
+
 do_install () {
 
 	install -d ${D}${sysconfdir}/init.d
-	install -m 0755 ${WORKDIR}/files/misc-modules-start-stop.sh ${D}${sysconfdir}/init.d
+	install -m 0755 ${SCRIPT_INIT} ${D}${sysconfdir}/init.d
 }
