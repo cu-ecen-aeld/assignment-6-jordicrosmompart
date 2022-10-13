@@ -12,7 +12,7 @@ LICENSE = "Unknown"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=f098732a73b5f6f3430472f5b094ffdb"
 
 SRC_URI = "git://git@github.com/cu-ecen-aeld/assignment-7-jordicrosmompart.git;protocol=ssh;branch=master \
-           file://0001-Makefile-specific-for-this-commit.patch \
+           file://0001-Only-build-scull-and-misc.patch \
            "
 
 # Modify these as desired
@@ -23,7 +23,7 @@ S = "${WORKDIR}/git"
 
 inherit module
 
-EXTRA_OEMAKE:append:task-install = " -C ${STAGING_KERNEL_DIR} M=${S}/scull"
+EXTRA_OEMAKE:append:task-install = " -C ${STAGING_KERNEL_DIR} M=${S}/misc-modules"
 EXTRA_OEMAKE += "KERNELDIR=${STAGING_KERNEL_DIR}"
 
 inherit update-rc.d

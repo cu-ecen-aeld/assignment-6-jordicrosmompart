@@ -1,7 +1,7 @@
-From a71b05dcef8fb634a5fea0fc4512c2152f58fe76 Mon Sep 17 00:00:00 2001
+From 72eb65ca6e47825930f7c84c791df6c30351dca2 Mon Sep 17 00:00:00 2001
 From: Jordi <jordi.cros.mompart@gmail.com>
-Date: Thu, 13 Oct 2022 02:45:25 +0000
-Subject: [PATCH] Makefile specific for this commit
+Date: Thu, 13 Oct 2022 02:53:10 +0000
+Subject: [PATCH] Only build scull and misc
 
 ---
  Makefile | 5 +----
