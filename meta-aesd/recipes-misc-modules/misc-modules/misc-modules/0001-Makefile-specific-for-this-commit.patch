@@ -1,0 +1,23 @@
+From a71b05dcef8fb634a5fea0fc4512c2152f58fe76 Mon Sep 17 00:00:00 2001
+From: Jordi <jordi.cros.mompart@gmail.com>
+Date: Thu, 13 Oct 2022 02:45:25 +0000
+Subject: [PATCH] Makefile specific for this commit
+
+---
+ Makefile | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 7b08c49..c4f2e2e 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,8 +1,5 @@
+ 
+-SUBDIRS =  misc-progs misc-modules \
+-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
+-	   pci usb\
+-	   sbull snull short
++SUBDIRS =  misc-modules scull
+ 
+ all: subdirs
+ 
