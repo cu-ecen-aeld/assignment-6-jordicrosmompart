@@ -32,7 +32,7 @@ then
 	module_scull="scull"
 	
 	# Install module
-	insmod /lib/modules/5.15.18/extra/$module_scull.ko || exit 1
+	insmod /lib/modules/5.15.68-yocto-standard/$module_scull.ko || exit 1
 
 	# Retrieve major number
 	major=$(awk "\$2==\"$module_scull\" {print \$1}" /proc/devices)

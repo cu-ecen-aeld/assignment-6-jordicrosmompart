@@ -32,7 +32,7 @@ then
 	device_faulty="faulty"
 
 	# Install module
-	insmod /lib/modules/5.15.18/extra/$module_faulty.ko || exit 1
+	insmod /lib/modules/5.15.68-yocto-standard/$module_faulty.ko || exit 1
 
 	# Retrieve major number
 	major=$(awk "\$2==\"$module_faulty\" {print \$1}" /proc/devices)

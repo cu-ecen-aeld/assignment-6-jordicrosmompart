@@ -1,7 +1,7 @@
-From 72eb65ca6e47825930f7c84c791df6c30351dca2 Mon Sep 17 00:00:00 2001
+From b2671d332741a84900bf09a540da3dca1ce44149 Mon Sep 17 00:00:00 2001
 From: Jordi <jordi.cros.mompart@gmail.com>
-Date: Thu, 13 Oct 2022 02:53:10 +0000
-Subject: [PATCH] Only build scull and misc
+Date: Thu, 13 Oct 2022 04:05:37 +0000
+Subject: [PATCH] Makefile only builds scull and misc-modules
 
 ---
  Makefile | 5 +----
