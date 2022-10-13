@@ -28,6 +28,10 @@ inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
 INITSCRIPT_NAME:${PN} = "misc-modules-start-stop.sh"
 
+do_compile () {
+	oe_runmake
+}
+
 do_install () {
 
 	install -d ${D}${sysconfdir}/init.d
